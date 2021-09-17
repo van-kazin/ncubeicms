@@ -474,7 +474,7 @@
   </div>
 @endsection
 
-<!-- @section('js') -->
+@section('js')
     <script>
         var input = document.querySelector('input[type=file]'); // see Example 4
         input.onchange = function () {
@@ -523,4 +523,4 @@
         }
     </script>
 
-<!-- @endsection -->
+@endsection
