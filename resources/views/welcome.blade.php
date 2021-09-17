@@ -73,7 +73,7 @@
             border-color: #2ecc71
           }
 
-          .box input[type="submit"] {
+          .box button[type="submit"] {
             border: 0;
             background: none;
             display: block;
@@ -128,7 +128,9 @@
                                           </span>
                                       @enderror
 
-                                      <input type="submit" name="" value="{{ __('Login') }}" href="#">
+                                      <button type="submit" class="btn btn-primary">
+                                          {{ __('Login') }}
+                                      </button>
                                   </form>
                               </div>
                           </div>

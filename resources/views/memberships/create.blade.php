@@ -462,7 +462,6 @@
                       </select>
               </div>
             </div>
-
             <hr>
                <div class="col-6">
                  <button type="submit" class="btn btn-success ml-5">
@@ -475,7 +474,7 @@
   </div>
 @endsection
 
-@section('js')
+<!-- @section('js') -->
     <script>
         var input = document.querySelector('input[type=file]'); // see Example 4
         input.onchange = function () {
@@ -524,4 +523,4 @@
         }
     </script>
 
-@endsection
+<!-- @endsection -->
