@@ -39,8 +39,8 @@ return [
     |
     */
 
-    // 'debug' => (bool) env('APP_DEBUG', false),
-    'debug' => env('APP_DEBUG', $_SERVER['REMOTE_ADDR'] == 'your.ip.address' ? true : false),
+    'debug' => (bool) env('APP_DEBUG', false),
+    // 'debug' => env('APP_DEBUG', $_SERVER['REMOTE_ADDR'] == 'your.ip.address' ? true : false),
 
     /*
     |--------------------------------------------------------------------------

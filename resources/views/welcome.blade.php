@@ -26,7 +26,7 @@
             width: 500px;
             padding: 40px;
             position: absolute;
-            top: 5%;
+            top: 2%;
             left: 25%;
             background: #191919;
             ;
