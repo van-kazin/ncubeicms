@@ -228,7 +228,7 @@
 
           <!-- Financials -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
+            <a href="{{ route('financials') }}" class="nav-link">
               <i class="nav-icon fas fa-dollar-sign blue"></i>
               <p>
                 Financials

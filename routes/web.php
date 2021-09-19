@@ -96,3 +96,7 @@ Route::get('department-members/{department}', [App\Http\Controllers\MembershipCo
 Route::get('messaging', [App\Http\Controllers\MessageController::class, 'index'])->name('messaging');
 Route::get('messages',  [App\Http\Controllers\MessageController::class, 'fetchMessages']);
 Route::post('message', [App\Http\Controllers\MessageController::class, 'sendMessage']);
+
+
+// Financial Routes
+Route::get('financials', [App\Http\Controllers\FinancialController::class, 'index'])->name('financials');
