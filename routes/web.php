@@ -17,10 +17,19 @@ use Illuminate\Support\Facades\Route;
 // });
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('auth.login');
 });
 
-Auth::routes();
+// Auth::routes();
+Auth::routes([
+
+  'register' => false, // Register Routes...
+
+  'reset' => false, // Reset Password Routes...
+
+  'verify' => false, // Email Verification Routes...
+
+]);
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 // Also Restrict to AdminOnly
