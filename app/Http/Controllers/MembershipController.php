@@ -89,7 +89,7 @@ class MembershipController extends Controller
             'placeofwork'=> $request->placeofwork,
             'date_enteredchurch'=> $request->date_enteredchurch,
             'baptism_date'=> $request->baptism_date,
-            'former_church'=> $request->former_church,
+            'former_church'=> $request->former_church
         ]);
 
         if ($request->association)

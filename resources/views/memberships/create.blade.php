@@ -32,7 +32,7 @@
             @method('PUT')
           @endif
 
-          <div class="">
+           <div class="">
                <div class="row no-gutters">
                  <div class="col-md-10">
                    <div class="form-row form-group col-md-10 justify-content-left pl-5">
@@ -85,6 +85,7 @@
                     @enderror
                 </div>
             </div>
+
             <div class="form-row justify-content-center">
               <!-- member id  -->
                   <div class="form-group col-md-3">
@@ -176,8 +177,7 @@
 
 
             <div class="form-row justify-content-center">
-
-            <!-- email address  -->
+              <!-- email address  -->
                 <div class="form-group col-md-3">
                     <label for="email">Email Address</label>
                     <input type="email" name="email" id="email" class="form-control @error('email') is-invalid @enderror"
@@ -240,7 +240,7 @@
                      </span>
                    @enderror
                </div>
-           <!-- mother name  -->
+                <!-- mother name  -->
                <div class="form-group col-md-3">
                    <label for="mother_name">Name of Mother</label>
                    <input type="text" name="mother_name" id="mother_name" class="form-control @error('mother_name') is-invalid @enderror" placeholder="Enter name of mother" value="{{isset($membership) ? $membership->mother_name: old('mother_name')}}">
@@ -250,7 +250,7 @@
                      </span>
                    @enderror
                </div>
-               <!-- marital_status -->
+                <!-- marital_status -->
                <div class="form-group col-md-3">
                    <label for="marital_status">Marital Status</label>
                    <select name="marital_status" id="marital_status" class="form-control  @error('marital_status') is-invalid @enderror" value="{{isset($membership) ? $membership->marital_status: old('marital_status')}}">
@@ -305,7 +305,7 @@
                       <strong>{{ $message }}</strong>
                   </span>
                 @enderror
-            </div>
+              </div>
             </div>
 
             <!-- Occupational Information  -->
@@ -314,46 +314,46 @@
            </div>
                <!-- employment status  -->
               <div class="form-row justify-content-center">
-               <div class="form-group col-md-3">
-                   <label for="employment_status">Employment Status</label>
-                   <select name="employment_status" id="employment_status" class="form-control @error('employment_status') is-invalid @enderror"
-                      value="{{isset($membership) ? $membership->employment_status: old('employment_status')}}">
-                       <option value="{{isset($membership) ? $membership->employment_status:
-                          ''}}">{{isset($membership) ? $membership->employment_status:
-                         'Choose employment status'}}</option>
-                       <option>Employed</option>
-                       <option>Self Employed</option>
-                       <option>Retired</option>
-                       <option>Unemployed</option>
-                   </select>
-                   @error('employment_status')
-                     <span class="invalid-feedback" role="alert">
-                         <strong>{{ $message }}</strong>
-                     </span>
-                   @enderror
-               </div>
-               <!-- Profession  -->
-               <div class="form-group col-md-3">
-                   <label for="profession">Occupation</label>
-                   <select name="profession" id="profession" class="form-control @error('profession') is-invalid @enderror"
-                      value="{{isset($membership) ? $membership->profession: old('profession')}}">
-                       <option value="{{isset($membership) ? $membership->profession:
-                          ''}}">{{isset($membership) ? $membership->profession: 'Choose Occupation'}}
-                        </option>
-                       <option>Civil Servant</option>
-                       <option>Publc Servant</option>
-                       <option>Business owner</option>
-                       <option>Artisan</option>
-                       <option>Trader</option>
-                   </select>
-                   @error('profession')
-                     <span class="invalid-feedback" role="alert">
-                         <strong>{{ $message }}</strong>
-                     </span>
-                   @enderror
-               </div>
-               <!-- placeofwork -->
-               <div class="form-group col-md-3">
+                 <div class="form-group col-md-3">
+                     <label for="employment_status">Employment Status</label>
+                     <select name="employment_status" id="employment_status" class="form-control @error('employment_status') is-invalid @enderror"
+                        value="{{isset($membership) ? $membership->employment_status: old('employment_status')}}">
+                         <option value="{{isset($membership) ? $membership->employment_status:
+                            ''}}">{{isset($membership) ? $membership->employment_status:
+                           'Choose employment status'}}</option>
+                         <option>Employed</option>
+                         <option>Self Employed</option>
+                         <option>Retired</option>
+                         <option>Unemployed</option>
+                     </select>
+                     @error('employment_status')
+                       <span class="invalid-feedback" role="alert">
+                           <strong>{{ $message }}</strong>
+                       </span>
+                     @enderror
+                 </div>
+                 <!-- Profession  -->
+                 <div class="form-group col-md-3">
+                     <label for="profession">Occupation</label>
+                     <select name="profession" id="profession" class="form-control @error('profession') is-invalid @enderror"
+                        value="{{isset($membership) ? $membership->profession: old('profession')}}">
+                         <option value="{{isset($membership) ? $membership->profession:
+                            ''}}">{{isset($membership) ? $membership->profession: 'Choose Occupation'}}
+                          </option>
+                         <option>Civil Servant</option>
+                         <option>Publc Servant</option>
+                         <option>Business owner</option>
+                         <option>Artisan</option>
+                         <option>Trader</option>
+                     </select>
+                     @error('profession')
+                       <span class="invalid-feedback" role="alert">
+                           <strong>{{ $message }}</strong>
+                       </span>
+                     @enderror
+                 </div>
+                 <!-- placeofwork -->
+                 <div class="form-group col-md-3">
                    <label for="placeofwork">Current Work Place</label>
                    <input type="text" name="placeofwork" id="placeofwork" class="form-control @error('placeofwork') is-invalid @enderror"
                        placeholder="Enter place of work" value="{{isset($membership) ?
@@ -366,7 +366,7 @@
                </div>
               </div>
 
-            </div>
+            <!-- </div> -->
             <!-- Church Information  -->
          <div class="form-row form-group col-md-10 justify-content-left ml-5">
              <h5 class="text-left text center"> <i class="fas fa-home"></i> Church Information</h5>
@@ -410,9 +410,7 @@
                 @enderror
              </div>
          </div>
-
-
-            <div class="form-row justify-content-center">
+         <div class="form-row justify-content-center">
                 <!-- Resident Pastor  -->
                 <div class="form-group col-md-3">
                     <label for="pastor">Resident Pastor</label>
@@ -442,7 +440,6 @@
                         @endforeach
                     </select>
                 </div>
-
                 <!-- Department -->
                 <div class="form-group col-md-3">
                     <label for="department">Departments</label>
@@ -460,10 +457,10 @@
                              </option>
                         @endforeach
                       </select>
-              </div>
-            </div>
+                </div>
+         </div>
             <hr>
-               <div class="col-6">
+           <div class="col-6 mb-pb-3">
                  <button type="submit" class="btn btn-success ml-5">
                    <i class="fas fa-user-plus"></i>  {{ isset($membership) ? 'Update Member' : 'Register Member' }}
                  </button>
@@ -522,5 +519,4 @@
           document.body.appendChild(img);
         }
     </script>
-
 @endsection
