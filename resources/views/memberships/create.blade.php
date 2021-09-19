@@ -31,7 +31,6 @@
           @if(isset($membership))
             @method('PUT')
           @endif
-
            <div class="">
                <div class="row no-gutters">
                  <div class="col-md-10">
@@ -41,11 +40,12 @@
                  </div>
                 <!-- member-image preview after upload -->
                  <div class="col-md-2">
-                   <canvas style="height: 40px; width: 50px; border-radius: 30%;" class="card-img float-right"></canvas>
+                   <canvas style="height: 40px; width: 50px; border-radius: 30%;"
+                     class="card-img float-right">
+                   </canvas>
                  </div>
                </div>
            </div>
-
            <!-- full name  -->
             <div class="form-row justify-content-center">
                 <div class="form-group col-md-3">
@@ -85,7 +85,6 @@
                     @enderror
                 </div>
             </div>
-
             <div class="form-row justify-content-center">
               <!-- member id  -->
                   <div class="form-group col-md-3">
@@ -133,7 +132,6 @@
                 @enderror
               </div>
             </div>
-
             <!-- Contact Information  -->
            <div class="form-row form-group col-md-10 justify-content-left ml-5">
                <h5 class="text-left text center"> <i class="fas fa-phone"></i> Contact & Educational Information</h5>
@@ -174,8 +172,6 @@
                    @enderror
                </div>
            </div>
-
-
             <div class="form-row justify-content-center">
               <!-- email address  -->
                 <div class="form-group col-md-3">
@@ -222,7 +218,6 @@
                         @enderror
                 </div>
             </div>
-
             <!-- Family Information  -->
            <div class="form-row form-group col-md-10 justify-content-left ml-5">
                <h5 class="text-left text center"> <i class="fas fa-users"></i> Family Information</h5>
@@ -365,8 +360,6 @@
                  @enderror
                </div>
               </div>
-
-            <!-- </div> -->
             <!-- Church Information  -->
          <div class="form-row form-group col-md-10 justify-content-left ml-5">
              <h5 class="text-left text center"> <i class="fas fa-home"></i> Church Information</h5>
@@ -473,12 +466,12 @@
 
 @section('js')
     <script>
-        var input = document.querySelector('input[type=file]'); // see Example 4
+        var input = document.querySelector('input[type=file]');
         input.onchange = function () {
           var file = input.files[0];
           //upload(file);
-          drawOnCanvas(file);   // see Example 6
-          //displayAsImage(file); // see Example 7
+          drawOnCanvas(file);
+          //displayAsImage(file);
         };
         function upload(file) {
           var form = new FormData(),
@@ -492,7 +485,7 @@
           var reader = new FileReader();
           reader.onload = function (e) {
             var dataURL = e.target.result,
-                c = document.querySelector('canvas'), // see Example 4
+                c = document.querySelector('canvas'),
                 ctx = c.getContext('2d'),
                 img = new Image();
 
