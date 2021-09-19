@@ -169,7 +169,7 @@
 
           <!-- Management -->
           <li class="nav-item">
-            <a href="#" class="nav-link {{ request()->is('users/*') ? 'active' : '' }}">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-briefcase blue"></i>
               <p>
                 Management
@@ -195,7 +195,7 @@
 
           <!-- Departments -->
           <li class="nav-item">
-            <a href="{{ route('departments') }} {{ request()->is('departments/*') ? 'active' : '' }}" class="nav-link">
+            <a href="{{ route('departments') }}" class="nav-link">
               <i class="nav-icon fas fa-user-circle blue"></i>
               <p>
                 Departments
