@@ -97,6 +97,10 @@ Route::get('messaging', [App\Http\Controllers\MessageController::class, 'index']
 Route::get('messages',  [App\Http\Controllers\MessageController::class, 'fetchMessages']);
 Route::post('message', [App\Http\Controllers\MessageController::class, 'sendMessage']);
 
+// AttendanceRoutes
+Route::get('attendance', [App\Http\Controllers\AttendanceController::class, 'index'])->name('attendance');
+Route::get('attendance/create', [App\Http\Controllers\AttendanceController::class, 'create'])->name('create-attendance');
+Route::post('attendance/store', [App\Http\Controllers\AttendanceController::class, 'store'])->name('store-attendance');
 
 // Financial Routes
 Route::get('financials', [App\Http\Controllers\FinancialController::class, 'index'])->name('financials');

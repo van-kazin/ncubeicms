@@ -24,6 +24,10 @@ class Membership extends Model
        'baptism_date', 'former_church',
    ];
 
+   public function attendance(){
+     return $this->hasMany(Attendance::class);
+   }
+
    // Many2Many RelationFunctions
    public function associations()
      {
@@ -54,5 +58,9 @@ class Membership extends Model
                  return $query;
            }
              return $query->where('name', 'LIKE', "%{$search}%");
+       }
+
+       public function attendances() {
+         return $this->hasMany(Attendance::class);
        }
 }

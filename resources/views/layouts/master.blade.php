@@ -158,8 +158,8 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Dasboard -->
           <li class="nav-item">
-            <a href="#" class="nav-link">
-              <i class="nav-icon fas fa-tachometer-alt blue {{ request()->is('/home') ? 'active' : '' }}"></i>
+            <a href="{{ route('home') }}" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt blue"></i>
               <p>
                 Dashboard
               </p>
@@ -225,7 +225,16 @@
             </a>
           </li>
           <!-- EndofMemberships -->
-
+          <!-- Attendance -->
+          <li class="nav-item">
+            <a href="{{ route('attendance') }}" class="nav-link">
+              <i class="nav-icon fas fa-calendar blue"></i>
+              <p>
+                Attendance
+              </p>
+            </a>
+          </li>
+          <!-- EndofAttendance -->
           <!-- Financials -->
           <li class="nav-item">
             <a href="{{ route('financials') }}" class="nav-link">
