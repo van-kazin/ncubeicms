@@ -38,7 +38,7 @@ Associations
        <h3 class="text-center">No Associations Added Yet</h3>
        @endif
        <!-- Modal -->
-                <form action="" method="POST" id="deleteAssociationForm">
+        <form action="" method="POST" id="deleteAssociationForm">
                     @csrf
                     @method('DELETE')
                     <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalLabel" aria-hidden="true">
@@ -59,8 +59,8 @@ Associations
                      </div>
                     </div>
                 </div>
-                </div>
-                </form>
+        </div>
+        </form>
       </div>
   </div>
 </div>
