@@ -18,9 +18,9 @@ Attendance
       <table class="table table-striped table-sm table-bordered">
         <thead>
           <th>Name</th>
-           @foreach($attendances as $att)
-           <th> {{ $att->date }} </th>
-           @endforeach
+
+           <th> Date </th>
+
         </thead>
         <tbody>
           @foreach($memberships as $mb)
@@ -28,11 +28,9 @@ Attendance
               <td>
                   {{ $mb->name }}
               </td>
-              @foreach($attendances as $at)
                   <td>
-                    {{ $mb->attendances->att }}
+                    TODO
                   </td>
-                @endforeach
             </tr>
           @endforeach
         </tbody>

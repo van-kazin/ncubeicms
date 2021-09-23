@@ -18,7 +18,8 @@ class AttendanceController extends Controller
      */
     public function index()
     {
-        return view('attendance.index')->with('memberships', Membership::all())->with('attendances', Attendance::all());
+        return view('attendance.index')->with('memberships', Membership::all())
+                                      ->with('attendances', Attendance::all());
     }
 
     /**
