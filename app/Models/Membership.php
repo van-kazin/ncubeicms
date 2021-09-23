@@ -59,8 +59,4 @@ class Membership extends Model
            }
              return $query->where('name', 'LIKE', "%{$search}%");
        }
-
-       public function attendances() {
-         return $this->hasMany(Attendance::class);
-       }
 }

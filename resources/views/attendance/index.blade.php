@@ -18,9 +18,7 @@ Attendance
       <table class="table table-striped table-sm table-bordered">
         <thead>
           <th>Name</th>
-
-           <th> Date </th>
-
+          <th> <input type="date" name="date"> </th>
         </thead>
         <tbody>
           @foreach($memberships as $mb)
