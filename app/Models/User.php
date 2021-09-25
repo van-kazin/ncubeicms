@@ -50,6 +50,11 @@ class User extends Authenticatable
        return $this->hasOne(Profile::class);
    }
 
+   public function income()
+   {
+       return $this->hasMany(Profile::class);
+   }
+
    //special many to many relationship functions for asociation, department & language //
    public function hasPermissions($permissionId)
      {

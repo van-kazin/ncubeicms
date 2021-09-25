@@ -24,6 +24,10 @@ class Membership extends Model
        'baptism_date', 'former_church',
    ];
 
+   public function income(){
+     return $this->hasMany(Income::class);
+   }
+
    public function attendance(){
      return $this->hasMany(Attendance::class);
    }

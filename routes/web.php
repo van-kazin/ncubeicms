@@ -104,3 +104,19 @@ Route::post('attendance/store', [App\Http\Controllers\AttendanceController::clas
 
 // Financial Routes
 Route::get('financials', [App\Http\Controllers\FinancialController::class, 'index'])->name('financials');
+
+// incomegroupsRoutes
+Route::get('incomegroups', [App\Http\Controllers\IncomegroupController::class, 'index'])->name('incomegroups');
+Route::get('incomegroup/create', [App\Http\Controllers\IncomegroupController::class, 'create'])->name('create-incomegroup');
+Route::post('incomegroup/store', [App\Http\Controllers\IncomegroupController::class, 'store'])->name('store-incomegroup');
+Route::get('incomegroup/{incomegroup}/edit', [App\Http\Controllers\IncomegroupController::class, 'edit'])->name('edit-incomegroup');
+Route::put('incomegroup/{incomegroup}', [App\Http\Controllers\IncomegroupController::class, 'update'])->name('update-incomegroup');
+Route::delete('incomegroup/{incomegroup}', [App\Http\Controllers\IncomegroupController::class, 'destroy'])->name('delete-incomegroup');
+
+// incomeRoutes
+Route::get('incomes', [App\Http\Controllers\IncomeController::class, 'index'])->name('incomes');
+Route::get('income/create', [App\Http\Controllers\IncomeController::class, 'create'])->name('create-income');
+Route::post('income/store', [App\Http\Controllers\IncomeController::class, 'store'])->name('store-income');
+Route::get('income/{income}/edit', [App\Http\Controllers\IncomeController::class, 'edit'])->name('edit-income');
+Route::put('income/{income}', [App\Http\Controllers\IncomeController::class, 'update'])->name('update-income');
+Route::delete('income/{income}', [App\Http\Controllers\IncomeController::class, 'destroy'])->name('delete-income');

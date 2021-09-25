@@ -237,12 +237,39 @@
           <!-- EndofAttendance -->
           <!-- Financials -->
           <li class="nav-item">
-            <a href="{{ route('financials') }}" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-dollar-sign blue"></i>
               <p>
                 Financials
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item pl-3">
+                <a href="{{ route('incomegroups') }}" class="nav-link">
+                  <i class="fas fa-users nav-icon"></i>
+                  <p>Income Groups</p>
+                </a>
+              </li>
+              <li class="nav-item pl-3">
+                <a href="{{ route('incomes') }}" class="nav-link">
+                  <i class="fas fa-arrow-down nav-icon"></i>
+                  <p>Income Management</p>
+                </a>
+              </li>
+              <li class="nav-item pl-3">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-arrow-up nav-icon"></i>
+                  <p>Expense Management</p>
+                </a>
+              </li>
+              <li class="nav-item pl-3">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-book nav-icon"></i>
+                  <p>Financial Reports</p>
+                </a>
+              </li>
+            </ul>
           </li>
           <!-- EndofFinancilas -->
           <!-- Messaging -->
